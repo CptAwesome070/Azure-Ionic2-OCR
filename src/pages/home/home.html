@@ -1,0 +1,37 @@
+<ion-navbar *navbar>
+  <ion-title>
+    Home
+  </ion-title>
+</ion-navbar>
+
+<ion-content class="home" >
+  <ion-fab top right edge>
+    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+    <ion-fab-list>
+      <button ion-fab (click)="takePicture()"><ion-icon name="camera"></ion-icon></button>
+      <button ion-fab (click)="performOCR()"><ion-icon name="logo-googleplus"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-fab left bottom>
+    <button ion-fab color="light"><ion-icon name="ios-people"></ion-icon></button>
+    <ion-fab-list side="top">
+      <button ion-fab color="primary">JG</button>
+      <button ion-fab color="#0e0e0e">MJ</button>
+      <button ion-fab color="#aaa1a2">TP</button>
+      <button ion-fab color="danger">HI</button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <canvas id="tempCanvas" (tap)="tapEvent($event)"></canvas>
+
+  <!--<ion-card>
+    <ion-card-content >
+
+
+
+
+
+    </ion-card-content>
+  </ion-card>-->
+</ion-content>
